@@ -2,27 +2,33 @@
 A simple, interactive command-line implementation of the classic Tic-Tac-Toe game built using Python.
 ---
 ##Features 
--**2-player gameplay:**play locally with a friend on the same machine. 
+-**2-player gameplay:**Play locally with a friend on the same machine. 
 -**Input Validation:**Prevents invalid moves, such as choosing an occupied spot or entering non-numeric inputs.
 -**Dynamic Board Display:**updates and prints the 3x3 board after every move.
 -**Win & draw detection:**automatically checks for winning condition (rows, colunms, diagonals) or a draw state.
 ---
 ## Project structure 
-main.py #Main game logic and loop 
-README.md #Project documentation 
-.gitignore #files ignore by Git 
-requirement.txt #project dependencies (if any)
+'''text 
+tic-tac-toe-game/
+|--main.py
+|--README.md
+|--.gitignore
 
-How to Run 
-prerequisites
+Requirements
 . Python 3.x installed on your computer 
+. no external Python packages are required. 
 
+How to Run
 steps
-1. clone or download this repository to your local machine
-2. open your terminal or command prompt and navigate to your project directory:bash
-   cd path/to/your-project-folder
+1. clone or download this repository to your local machine- open a terminal or command prompt and run:
+   git clone
+   https://github.com/janhvikapadnis30/tic-tac-toe-game.git
+2. navigate to the project directory-
+   cd tic-tac-toe-game 
 3. run the game:bash
-   pyhton main.py
+   python main.py
+   on the windows you can also use:
+   py main.py
 
 How to Play
 1. the game is played on 3x3 grid
@@ -34,3 +40,12 @@ How to Play
 Author
 Name: Janhvi Kapadnis
 GitHub: @janhvikapadnis30
+
+### One important thing
+
+Your screenshot shows a file called **`tic tac toe`** in addition to `main.py`. I can't tell from the screenshot whether that's a file or folder, and whether it is needed.
+
+Before submitting, **run the exact command below from your project folder**:
+
+```bash
+python main.py

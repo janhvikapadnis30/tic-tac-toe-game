@@ -6,7 +6,11 @@ A simple, interactive command-line implementation of the classic Tic-Tac-Toe gam
 -**Input Validation:**Prevents invalid moves, such as choosing an occupied spot or entering non-numeric inputs.
 -**Dynamic Board Display:**updates and prints the 3x3 board after every move.
 -**Win & draw detection:**automatically checks for winning condition (rows, colunms, diagonals) or a draw state.
----
+
+##Technologies used
+**Language:**Python 3.x
+**Version Control:** Git & GitHub
+
 ## Project structure 
 '''text 
 tic-tac-toe-game/
@@ -49,3 +53,6 @@ Before submitting, **run the exact command below from your project folder**:
 
 ```bash
 python main.py
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/518cd5c1-560e-4923-ae2c-b3a6eeaafe1e" />
+

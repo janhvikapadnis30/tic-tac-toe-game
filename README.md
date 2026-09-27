@@ -1,64 +1,139 @@
-# XO Tic-Tac-Toe Game (python)
+# XO Tic-Tac-Toe Game
 
-A simple, interactive command-line implementation of the classic Tic-Tac-Toe game built using Python.
-A modular, robust Tic-Tac-Toe application supporting local multiplayer and single-player modes with score tracking and unit testing.
----
-##Features 
--**2-player gameplay:**Play locally with a friend on the same machine. 
--**Input Validation:**Prevents invalid moves, such as choosing an occupied spot or entering non-numeric inputs.
--**Dynamic Board Display:**updates and prints the 3x3 board after every move.
--**Win & draw detection:**automatically checks for winning condition (rows, colunms, diagonals) or a draw state.
+A modular and interactive command-line Tic-Tac-Toe game developed using Python. The project supports both local two-player gameplay and single-player gameplay against an AI opponent. It includes input validation, win/draw detection, score tracking, and unit testing.
 
-##Technologies used
-**Language:**Python 3.x
-**Version Control:** Git & GitHub
+## Features
 
-## Project structure 
-'''text 
+* **Single-Player Mode:** Play against an AI opponent using decision-making logic.
+* **Two-Player Mode:** Play locally with another player on the same computer.
+* **Input Validation:** Prevents invalid, non-numeric, out-of-range, and already occupied moves.
+* **Dynamic Board Display:** Displays the 3×3 game board after every move.
+* **Win and Draw Detection:** Automatically checks rows, columns, and diagonals for winning conditions and detects draws.
+* **Score Tracking:** Maintains game scores across multiple rounds.
+* **Modular Design:** Game functionality is separated into different Python modules.
+* **Unit Testing:** Includes tests for important game components.
+
+## Technologies Used
+
+* **Programming Language:** Python 3.x
+* **Version Control:** Git and GitHub
+* **Testing:** Python unit testing
+* **Storage:** Local file storage for score information
+* **External Packages:** No external Python packages are required.
+
+## Project Structure
+
+```text
 tic-tac-toe-game/
-|--main.py
-|--README.md
-|--.gitignore
-|--statement.md
-|--board.py
-|--ai_engine.py
-|--score_tracker.py
-|--validator.py
-|--tests/
-   |--test_board.py
-   |--test_ai.py
+│
+├── main.py
+├── board.py
+├── game_engine.py
+├── ai_engine.py
+├── score_tracker.py
+├── validator.py
+│
+├── tests/
+│   ├── test_board.py
+│   └── test_ai.py
+│
+├── statement.md
+├── README.md
+└── .gitignore
+```
 
-Requirements
-. Python 3.x installed on your computer 
-. no external Python packages are required. 
+## Requirements
 
-How to Run
-steps
-1. clone or download this repository to your local machine- open a terminal or command prompt and run:
-   git clone
-   https://github.com/janhvikapadnis30/tic-tac-toe-game.git
-2. navigate to the project directory-
-   cd tic-tac-toe-game 
-3. run the game:bash
-   python main.py
-   on the windows you can also use:
-   py main.py
+* Python 3.x
+* Git (optional, if cloning the repository)
 
-How to Play
-1. the game is played on 3x3 grid
-2. player 1 is X and player 2 is O.
-3. Enter the number corresponding to the position on the board where you want to place your marks (1-9)
-4. the first player to get 3 of their marks in a row (horizontally, vertically, diagonally) wins!
-5. if all 9 spots are filled without a winner, the game end in a tie.
+No external Python packages are required.
 
-Author
-Name: Janhvi Kapadnis
-GitHub: @janhvikapadnis30
+## Installation
 
+1. Clone the repository:
 
+```bash
+git clone https://github.com/janhvikapadnis30/tic-tac-toe-game.git
+```
+
+2. Open the project folder:
+
+```bash
+cd tic-tac-toe-game
+```
+
+## How to Run
+
+Run the main program using:
 
 ```bash
 python main.py
+```
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/518cd5c1-560e-4923-ae2c-b3a6eeaafe1e" />
+On Windows, you can also use:
 
+```bash
+py main.py
+```
+
+## How to Play
+
+1. The game is played on a 3×3 board.
+2. Select the required game mode.
+3. Player 1 uses **X**.
+4. Player 2 or the AI uses **O**.
+5. Enter the number corresponding to the board position where you want to place your mark.
+6. A player wins by placing three marks in a row horizontally, vertically, or diagonally.
+7. If all nine positions are filled without a winner, the game ends in a draw.
+8. Invalid or occupied positions are rejected and the player is asked to enter another valid move.
+
+## Testing
+
+The project includes unit tests for important game components.
+
+Run the tests using:
+
+```bash
+python -m unittest discover
+```
+
+The test files are located in the `tests/` directory.
+
+## Functional Modules
+
+The project is divided into the following major functional modules:
+
+1. **Board Module** – Manages the game board and board operations.
+2. **Game Engine Module** – Controls turns, game flow, and winning/draw conditions.
+3. **AI Engine Module** – Handles the computer opponent's decision-making.
+4. **Score Tracker Module** – Maintains scores and game results.
+5. **Validator Module** – Validates player input and prevents invalid moves.
+
+## Non-Functional Requirements
+
+### 1. Usability
+
+The game provides simple command-line interaction and clear instructions for players.
+
+### 2. Reliability
+
+The application validates user input and prevents invalid moves from interrupting normal gameplay.
+
+### 3. Maintainability
+
+The application follows a modular structure where different responsibilities are separated into individual Python files.
+
+### 4. Performance
+
+The game performs board operations, validation, and win-condition checks efficiently for a 3×3 board.
+
+### 5. Error Handling
+
+Invalid, non-numeric, out-of-range, and occupied-position inputs are handled without terminating the game unexpectedly.
+
+## Author
+
+**Janhvi Kapadnis**
+
+GitHub: [janhvikapadnis30](https://github.com/janhvikapadnis30)

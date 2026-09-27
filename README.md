@@ -1,5 +1,7 @@
 # XO Tic-Tac-Toe Game (python)
+
 A simple, interactive command-line implementation of the classic Tic-Tac-Toe game built using Python.
+A modular, robust Tic-Tac-Toe application supporting local multiplayer and single-player modes with score tracking and unit testing.
 ---
 ##Features 
 -**2-player gameplay:**Play locally with a friend on the same machine. 
@@ -17,6 +19,14 @@ tic-tac-toe-game/
 |--main.py
 |--README.md
 |--.gitignore
+|--statement.md
+|--board.py
+|--ai_engine.py
+|--score_tracker.py
+|--validator.py
+|--tests/
+   |--test_board.py
+   |--test_ai.py
 
 Requirements
 . Python 3.x installed on your computer 

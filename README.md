@@ -45,11 +45,7 @@ Author
 Name: Janhvi Kapadnis
 GitHub: @janhvikapadnis30
 
-### One important thing
 
-Your screenshot shows a file called **`tic tac toe`** in addition to `main.py`. I can't tell from the screenshot whether that's a file or folder, and whether it is needed.
-
-Before submitting, **run the exact command below from your project folder**:
 
 ```bash
 python main.py
